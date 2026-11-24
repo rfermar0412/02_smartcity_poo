@@ -8,6 +8,7 @@ class Vehiculo:
         self.nivel_bateria: float = 100.0 
         self.kilometros_totales: float = 0.0
 
+
     def conducir(self, distancia_km: float) -> bool:
         energia_necesaria = distancia_km * 0.15
         porcentaje_consumido = (energia_necesaria / self.capacidad_kwh) * 100.0
