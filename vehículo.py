@@ -16,8 +16,7 @@ class Vehiculo:
         def kilometros_totales(self, nuevos_km: float) -> None:
             if nuevos_km < self._kilometros_totales:
                 raise ValueError("Los kilómetros no pueden disminuir (fraude de odómetro).")
-
-        self._kilometros_totales = nuevos_km
+            self._kilometros_totales = nuevos_km
     def conducir(self, distancia_km: float) -> bool:
         energia_necesaria = distancia_km * 0.15
         porcentaje_consumido = (energia_necesaria / self.capacidad_kwh) * 100.0
